@@ -45,6 +45,8 @@ class _HomeState extends State<Home> {
                             Text(
                               'Transactions History',
                               style: TextStyle(
+                                fontFamily: 'Poppins',
+                                fontStyle: FontStyle.normal,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 19,
                                 color: Colors.black,
@@ -53,6 +55,8 @@ class _HomeState extends State<Home> {
                             Text(
                               'See all',
                               style: TextStyle(
+                                fontStyle: FontStyle.normal,
+                                fontFamily: 'Poppins',
                                 fontWeight: FontWeight.w600,
                                 fontSize: 15,
                                 color: Colors.grey,
@@ -95,8 +99,9 @@ class _HomeState extends State<Home> {
       title: Text(
         history.name,
         style: TextStyle(
+          fontFamily: 'Poppins',
           fontSize: 17,
-          fontWeight: FontWeight.w600,
+          fontWeight: FontWeight.w900,
         ),
       ),
       subtitle: Text(
@@ -108,6 +113,7 @@ class _HomeState extends State<Home> {
       trailing: Text(
         history.amount,
         style: TextStyle(
+          fontFamily: 'Poppins',
           fontWeight: FontWeight.w600,
           fontSize: 19,
           color: history.IN == 'Income' ? Colors.green : Colors.red,
@@ -125,7 +131,7 @@ class _HomeState extends State<Home> {
               width: double.infinity,
               height: 240,
               decoration: BoxDecoration(
-                color: Color(0xff368983),
+                color: Colors.purple,
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20),
@@ -137,7 +143,7 @@ class _HomeState extends State<Home> {
                     top: 35,
                     left: 340,
                     child: ClipRRect(
-                      borderRadius: BorderRadius.circular(7),
+                      borderRadius: BorderRadius.circular(9),
                       child: Container(
                         height: 40,
                         width: 40,
@@ -151,23 +157,25 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(top: 35, left: 10),
+                    padding: const EdgeInsets.only(top: 45, left: 10),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           'Good afternoon',
                           style: TextStyle(
+                            fontFamily: 'Poppins',
                             fontWeight: FontWeight.w500,
                             fontSize: 16,
                             color: Color.fromARGB(255, 224, 223, 223),
                           ),
                         ),
                         Text(
-                          'Enjelin Morgeana',
+                          'Saikat Nayek',
                           style: TextStyle(
                             fontWeight: FontWeight.w600,
-                            fontSize: 20,
+                            fontFamily: 'Poppins',
+                            fontSize: 25,
                             color: Colors.white,
                           ),
                         ),
@@ -180,7 +188,7 @@ class _HomeState extends State<Home> {
           ],
         ),
         Positioned(
-          top: 140,
+          top: 150,
           left: 37,
           child: Container(
             height: 170,
@@ -188,7 +196,7 @@ class _HomeState extends State<Home> {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromRGBO(47, 125, 121, 0.3),
+                  color: Color.fromRGBO(47, 125, 121, 1.3),
                   offset: Offset(0, 6),
                   blurRadius: 12,
                   spreadRadius: 6,
@@ -208,6 +216,7 @@ class _HomeState extends State<Home> {
                       Text(
                         'Total Balance',
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontWeight: FontWeight.w500,
                           fontSize: 16,
                           color: Colors.white,
