@@ -105,8 +105,9 @@ class _HomeState extends State<Home> {
         ),
       ),
       subtitle: Text(
-        '${day[history.datetime.weekday - 1]}  ${history.datetime.year}-${history.datetime.day}-${history.datetime.month}',
+        '${day[history.datetime.weekday - 1]}  ${history.datetime.day}-${history.datetime.month}-${history.datetime.year}',
         style: TextStyle(
+          fontFamily: 'Poppins',
           fontWeight: FontWeight.w600,
         ),
       ),
@@ -237,8 +238,9 @@ class _HomeState extends State<Home> {
                       Text(
                         '\$ ${total()}',
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontWeight: FontWeight.bold,
-                          fontSize: 25,
+                          fontSize: 24,
                           color: Colors.white,
                         ),
                       ),
@@ -266,6 +268,7 @@ class _HomeState extends State<Home> {
                           Text(
                             'Income',
                             style: TextStyle(
+                              fontFamily: 'Poppins',
                               fontWeight: FontWeight.w500,
                               fontSize: 16,
                               color: Color.fromARGB(255, 216, 216, 216),
@@ -288,6 +291,7 @@ class _HomeState extends State<Home> {
                           Text(
                             'Expenses',
                             style: TextStyle(
+                              fontFamily: 'Poppins',
                               fontWeight: FontWeight.w500,
                               fontSize: 16,
                               color: Color.fromARGB(255, 216, 216, 216),
@@ -308,6 +312,7 @@ class _HomeState extends State<Home> {
                         '\$ ${income()}',
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
+                          fontFamily: 'Poppins',
                           fontSize: 17,
                           color: Colors.white,
                         ),
@@ -315,6 +320,7 @@ class _HomeState extends State<Home> {
                       Text(
                         '\$ ${expenses()}',
                         style: TextStyle(
+                          fontFamily: 'Poppins',
                           fontWeight: FontWeight.w600,
                           fontSize: 17,
                           color: Colors.white,
