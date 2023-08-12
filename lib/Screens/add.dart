@@ -7,7 +7,7 @@ class Add_Screen extends StatefulWidget {
 
   @override
   State<Add_Screen> createState() => _Add_ScreenState();
-}
+} //SAIKAT NAYEK 
 
 class _Add_ScreenState extends State<Add_Screen> {
   final box = Hive.box<Add_data>('data');
@@ -143,7 +143,7 @@ class _Add_ScreenState extends State<Add_Screen> {
   Padding How() {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15),
-      child: Container(
+      child: Container(      //SAIKAT NAYEK
         padding: EdgeInsets.symmetric(horizontal: 15),
         width: 300,
         decoration: BoxDecoration(
@@ -309,6 +309,7 @@ class _Add_ScreenState extends State<Add_Screen> {
       ),
     );
   }
+  // Code : Fixed (SAIKAT NAYEK)
 
   Column background_container(BuildContext context) {
     return Column(
